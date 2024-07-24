@@ -1,0 +1,196 @@
+<section class="process-step-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="process-step">
+					<ul>
+											<li>
+							<div class="process-step-box">
+																<figure><img src="#" alt=""></figure>
+																<div class="process-step-box-text">
+								<h5><strong> Step 1.</strong>Initial Consultation</h5>
+								<p>Begin with a free consultation to discuss your needs, inspect the project scope, and outline initial concerns.</p>
+							</div>
+							</div>
+						</li>
+												<li>
+							<div class="process-step-box">
+																<figure><img src="#" alt=""></figure>
+																<div class="process-step-box-text">
+								<h5><strong> Step 2.</strong>Detailed Inspection</h5>
+								<p>Conduct a comprehensive roof inspection to assess condition and identify issues, ensuring accurate project planning.</p>
+							</div>
+							</div>
+						</li>
+												<li>
+							<div class="process-step-box">
+																<figure><img src="#" alt=""></figure>
+																<div class="process-step-box-text">
+								<h5><strong> Step 3.</strong>Customized Proposal</h5>
+								<p>Receive a detailed proposal with timelines, cost estimates, and material options, tailored to fit your specific roofing requirements.</p>
+							</div>
+							</div>
+						</li>
+												<li>
+							<div class="process-step-box">
+																<figure><img src="#" alt=""></figure>
+																<div class="process-step-box-text">
+								<h5><strong> Step 4.</strong>Project Execution</h5>
+								<p>The roofing work commences, focusing on efficiency and minimal disruption, with continuous updates provided throughout the project.</p>
+							</div>
+							</div>
+						</li>
+												<li>
+							<div class="process-step-box">
+																<figure><img src="#" alt=""></figure>
+																<div class="process-step-box-text">
+								<h5><strong> Step 5.</strong>Quality Check and Final Walkthrough</h5>
+								<p>Complete the project with a final quality inspection and walkthrough to ensure satisfaction and discuss maintenance and warranties.</p>
+							</div>
+							</div>
+						</li>
+						 
+					</ul>
+					 
+					<div class="process-step-group">
+												<figure><img src="#" alt=""></figure>
+											</div>
+									</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+/*--CSS -*/
+
+
+/* process-step-section */
+section.process-step-section {
+    background: url(../images/process-step-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+}
+.process-step ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.process-step li {
+    list-style: none;
+    width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+}
+.process-step li::before {
+    content: '';
+    width: 0;
+    position: absolute;
+    transition: 0.6s;
+}
+.process-step-box {
+    max-width: 500px;
+}
+.process-step li h5 {
+    color: #1A2B56;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.process-step li:nth-child(1) {
+    margin: 0;
+    padding-left: 130px;
+}
+.process-step li:nth-child(1) .process-step-box {
+    max-width: 470px;
+}
+.process-step li:nth-child(1) figure {
+    text-align: right;
+}
+.process-step li:nth-child(1)::before {
+    background: url(../images/process-step-arrow-1.png) no-repeat;
+    width: 140px;
+    height: 60px;
+    right: -6%;
+    top: 31%;
+}
+.process-step li:nth-child(2){
+    margin: 0;
+}
+.process-step li:nth-child(2)::before {
+    background: url(../images/process-step-arrow-2.png) no-repeat;
+    width: 40px;
+    height: 70px;
+    left: 37%;
+    bottom: 4%;
+}
+.process-step li:nth-child(2) .process-step-box {
+    margin: 0 0 0 auto;
+    max-width: 620px;
+}
+.process-step li:nth-child(2) .process-step-box .process-step-box-text {
+    margin: -10px 0 0 230px;
+}
+.process-step li:nth-child(3) {
+    margin: 0;
+    order: 4;
+}
+.process-step li:nth-child(3) .process-step-box {
+    margin: 0 0 0 auto;
+}
+.process-step li:nth-child(3) .process-step-box .process-step-box-text {
+    margin: 30px 0 0 70px;
+}
+.process-step li:nth-child(4){
+    margin: 0;
+    order: 3;
+}
+.process-step li:nth-child(4)::before {
+    background: url(../images/process-step-arrow-4.png) no-repeat;
+    width: 80px;
+    height: 80px;
+    right: 37%;
+    top: 51%;
+}
+.process-step li:nth-child(4) figure {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.process-step li:nth-child(4) .process-step-box-text {
+    max-width: 400px;
+}
+.process-step li:nth-child(5){
+    margin: 0;
+    order: 5;
+}
+.process-step li:nth-child(5) .process-step-box {
+    display: flex;
+    max-width: 590px;
+    margin: -70px auto 0;
+}
+.process-step li:nth-child(5) .process-step-box figure {
+    width: 220px;
+    margin-right: 30px;
+}
+.process-step li:nth-child(5) .process-step-box .process-step-box-text {
+    width: calc(100% - 250px);
+}
+.process-step {
+    position: relative;
+}
+.process-step-group {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
